@@ -1,0 +1,154 @@
+@import url("reset.css");
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700&family=Poppins:wght@300;400;600&display=swap');
+
+:root{
+    --bodyBg: #ffffff;
+    --bodyColor: #000000;
+    --box-shadow: 15px 15px 46px #a3a3a3,
+                 -15px -15px 46px #ffffff;
+    transition: background-color .7s;
+    transition: box-shadow .7s;
+}
+
+.darkMode:root
+{
+    --bodyBg: #212529;
+    --bodyColor: #899095;
+    --box-shadow: 11px 11px 22px #121417,
+                 -11px -11px 22px #30363b;
+    transition: background-color .7s;
+    transition: box-shadow .7s;
+}
+
+.switchDark input[type="checkbox"]
+{
+    display: none;
+}
+
+.switchDark input[type="checkbox"]:hover
+{
+    display: none;
+    cursor: pointer;
+}
+
+.switchDark label
+{
+    margin: none;
+}
+
+.switchDark label:hover
+{
+    cursor: pointer;
+}
+
+.switchDark
+{
+    padding-top: 20px;
+    margin-top: 50px;
+    margin-bottom: -70px;
+    width: 60px;
+    height: 26px;
+    border-radius: 108px;
+    background-color: var(--bodyBg);
+    box-shadow:  var(--box-shadow);
+    transition: background-color .7s;
+    transition: box-shadow .7s;
+    padding: .5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.switchDark span
+{
+    padding: .5rem;
+}
+
+.switchDark:hover
+{
+    cursor: pointer;
+}
+
+body
+{ 
+    background-color: var(--bodyBg);
+    transition: background-color .7s;
+    color: var(--bodyColor);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.headerPhp
+{
+    width: 700px;
+    height: 100px;
+    transition: width .7s;
+    border-radius: 10px;
+    margin-top: 13px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.corpoPhp
+{
+    margin-top: 13px;
+    width: 700px;
+    height: 570px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*box-shadow: 0 4px 30px rgba(35, 35, 35, 0.500);
+    border: 1px solid rgba(255, 255, 255, 0.52);
+    backdrop-filter: blur(5px);*/
+    border-radius: 10px;
+    background-color: var(--bodyBg);
+    box-shadow:  var(--box-shadow);
+    transition: background-color .7s;
+    transition: box-shadow .7s;
+    transition: width .7s;
+}
+
+.footerPhp
+{
+    width: 700px;
+    height: 120px;
+    margin-top: 13px;
+    border-radius: 10px;
+    background-color: var(--bodyBg);
+    box-shadow:  var(--box-shadow);
+    transition: background-color .7s;
+    transition: box-shadow .7s;
+    transition: width .7s;
+}
+
+.copyright
+{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+@media (max-width: 700px)
+{
+  
+    .headerPhp
+    {
+        width: 350px;
+        transition: width .7s;
+    }
+    .corpoPhp
+    {
+        width: 350px;
+        transition: width .7s;
+    }
+    .footerPhp
+    {
+        width: 350px;
+        transition: width .7s;
+    }
+}

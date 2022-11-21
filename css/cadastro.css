@@ -1,0 +1,150 @@
+@import url("reset.css");
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700&family=Poppins:wght@300;400;600&display=swap');
+
+body
+{
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1
+{
+    margin-top: -20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    transition: width .7s;
+}
+
+.inputImg
+{
+    display: none;
+    max-width: 100%;
+}
+
+.img
+{
+    width: 600px;
+    aspect-ratio: 19/9;
+    background: linear-gradient(to bottom left, #03999e9f, #733ec8ab);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    border-radius: 50px;
+    border: 2px dashed #733ec8;
+    cursor: pointer;
+    transition: color 300ms ease-in-out, background 300ms ease-in-out;
+    transition: width .7s;
+}
+
+.img:hover
+{
+    background: linear-gradient(to bottom left, #03999e, #733ec8);
+}
+
+.img:focus
+{
+    background: linear-gradient(to bottom left, #03999e, #733ec8);
+}
+
+.formPerfil .remove
+{
+    margin-top: 30px;
+    background: rgba(255, 255, 255, 0.603);
+    color: #000000;
+    border-radius: 100px;
+    border: none;
+    padding: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    transition: background .10s;
+    transition: letter-spacing .5s;
+    width: 100%;
+    cursor: pointer;
+}
+
+.formPerfil .upload
+{
+    margin-top: 30px;
+    background: linear-gradient(to top left, #03999e, #733ec8);
+    color: rgb(255, 255, 255);
+    border-radius: 100px;
+    border: none;
+    padding: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    transition: background .10s;
+    transition: letter-spacing .5s;
+    width: 100%;
+    cursor: pointer;
+}
+
+.formPerfil .remove:hover
+{
+    
+    color: #000000;
+    transition: background .10s;
+    background: #ffffff;
+    transition: letter-spacing .5s;
+    letter-spacing: 7px;
+    
+}
+
+.formPerfil .upload:hover
+{
+    background: linear-gradient(to top left, #03999e, #733ec8);
+    color: rgb(255, 255, 255);
+    transition: background .5s;
+    transition: letter-spacing .5s;
+    letter-spacing: 7px;
+}
+
+.php
+{
+    display: none;
+}
+
+@media (max-width: 700px)
+{
+  
+    .img
+    {
+        width: 280px;
+        transition: width .7s;
+    }
+    .itemForm
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    h1
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }  
+    .formPerfil .remove:hover
+    {
+        letter-spacing: 3px;
+        transition: background .5s;
+    }
+    .formPerfil .remove
+    {
+        transition: background .5s;
+    }
+
+    .formPerfil .upload:hover
+    {
+        letter-spacing: 3px;
+        transition: background .5s;
+    }
+
+}

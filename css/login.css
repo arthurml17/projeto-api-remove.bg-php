@@ -1,0 +1,193 @@
+@import url("reset.css");
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700&family=Poppins:wght@300;400;600&display=swap');
+
+body
+{
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    /*background: linear-gradient(to right, #03989E, #733EC8);*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+    background: #ffffff;
+}
+
+.cartaoLogin
+{
+    width: 700px;
+    /*background: rgba(255,255,255, .5);*/
+    padding: 4rem;
+    /*border-radius: 10px;*/
+    position: relative;
+    /*box-shadow: 0 4px 30px rgba(35, 35, 35, 0.500);
+    border: 1px solid rgba(255, 255, 255, 0.52);
+    backdrop-filter: blur(5px);*/
+    border-radius: 10px;
+    background: #ffffff;
+    box-shadow:  15px 15px 46px #a3a3a3,
+                -15px -15px 46px #ffffff;
+    transition: width .7s;
+}
+
+.cartaoLoginLogo
+{
+    margin-bottom: 3.5rem;
+    width: 225px;
+    height: 225px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cartaoLoginLogo img
+{
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cartaoLoginLogo,
+.cartaoLoginHeader
+{
+    text-align: left;
+}
+
+.cartaoLogin a
+{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.cartaoLogin a:hover
+{
+    text-decoration: underline;
+}
+
+.cartaoLoginHeader
+{
+    margin-bottom: 2rem;
+}
+
+.cartaoLoginHeader h1
+{
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: .5rem;
+}
+
+.cartaoLoginHeader h1 + div
+{
+    font-size: calc(1rem*.8);
+    opacity: .8;
+}
+
+.cartaoLoginForm
+{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.cartaoLoginForm .itemForm
+{
+    position: relative;
+}
+
+.cartaoLoginForm .itemForm .itemFormIcon
+{
+    position: absolute;
+    top: .82rem;
+    left: 1.4rem;
+    font-size: 1.3rem;
+    opacity: .4;
+}
+
+.cartaoLoginForm .checkbox
+{
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.cartaoLoginForm .outroItemForm
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: calc(1rem * .8rem);
+    margin: .5rem;
+}
+
+.cartaoLoginForm button
+{
+    background: linear-gradient(to top left, #03989E, #733EC8);
+    color: whitesmoke;
+    border-radius: 100px;
+    border: none;
+    padding: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    transition: letter-spacing .5s;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+}
+
+.cartaoLoginForm button:hover
+{
+    transition: letter-spacing .5s;
+    letter-spacing: 8px;
+    cursor: pointer;
+}
+
+
+.cartaoLogin input[type="text"],
+.cartaoLogin input[type="password"],
+.cartaoLogin input[type="email"]
+{
+    border: none;
+    outline: none;
+    background: linear-gradient(to right, #acacac44, #ffffff00);
+    padding: 1rem 1.5rem;
+    padding-left: calc(1rem * 3.5);
+    border-radius: 100px;
+    width: 100%;
+    transition: background .5s;
+}
+
+.cartaoLogin input[type="email"]:focus
+{
+    background: #0cabb1;
+    color: whitesmoke;
+}
+
+.cartaoLogin input[type="password"]:focus
+{
+    background: #733ec8;
+    color: whitesmoke;
+}
+
+.cartaoLogin input[type="checkbox"]
+{
+    width: 16px;
+    height: 16px;
+    accent-color: #733ec8;
+}
+
+
+@media (max-width: 550px)
+{
+    body
+    {
+        padding: 2rem 0;
+    }
+
+    .cartaoLogin
+    {
+        width: 300px;
+        padding: 2rem;
+        transition: width .7s;
+    }
+}

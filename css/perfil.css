@@ -1,0 +1,132 @@
+
+@import url("reset.css");
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700&family=Poppins:wght@300;400;600&display=swap');
+
+body
+{
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formPerfil
+{
+    width: 400px;
+    background: linear-gradient(to top left, #03999e62, #733ec85d);
+    padding: 2rem;
+    border-radius: 50px;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    transition: width .5s;
+    box-shadow: 0 4px 30px rgba(35, 35, 35, 0.500);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(5px);
+}
+
+.formPerfil:hover
+{
+    width: 430px;
+    transition: width .5s;
+}
+
+.formPerfil input[type="text"]
+{
+    border: none;
+    outline: none;
+    background: #ffffff7e;
+    padding: 1rem 1.5rem;
+    padding-left: calc(1rem * 3.5);
+    border-radius: 100px;
+    width: 100%;
+    transition: background .7s;
+}
+
+.formPerfil input[type="email"]
+{
+    border: none;
+    outline: none;
+    background: #ffffff7e;
+    padding: 1rem 1.5rem;
+    padding-left: calc(1rem * 3.5);
+    border-radius: 100px;
+    width: 100%;
+    transition: background .7s;
+}
+
+.formPerfil input[type="password"]
+{
+    border: none;
+    outline: none;
+    background: #ffffff7e;
+    padding: 1rem 1.5rem;
+    padding-left: calc(1rem * 3.5);
+    border-radius: 100px;
+    width: 100%;
+    transition: background .7s;
+    
+}
+
+.formPerfil input[type="text"]:focus
+{
+    background: #ffffffe3;
+    color: #000000;
+    transition: background .5s;
+}
+
+.formPerfil input[type="password"]:focus
+{
+    background: #ffffffe3;
+    color: #000000;
+    transition: background .5s;
+}
+
+.formPerfil input[type="email"]:focus
+{
+    background: #ffffffe3;
+    color: #000000;
+    transition: background .5s;
+}
+
+
+.itemFormIcon
+{
+    top: .82rem;
+    left: 1.4rem;
+    font-size: 1.3rem;
+    opacity: .4;
+}
+
+.formPerfil button[type ="submit"]
+{
+    margin-top: 10px;
+    background: linear-gradient(to bottom right, #03999e, #733ec8);
+    color: whitesmoke;
+    border-radius: 100px;
+    border: none;
+    padding: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    transition: background .5s;
+    transition: letter-spacing .5s;
+    width: 100%;
+    cursor: pointer;
+}
+
+.formPerfil button[type ="submit"]:hover
+{
+    background: linear-gradient(to bottom right, #03999e, #733ec8);
+    color: whitesmoke;
+    transition: background .5s;
+    transition: letter-spacing .5s;
+    letter-spacing: 7px;
+}
